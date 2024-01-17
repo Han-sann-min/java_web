@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;  /* 수직으로 요소 배치 */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            margin-top: 0;  /* h1의 상단 마진을 0으로 설정하여 바로 위에 배치 */
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 20px;  /* form과 h1 사이에 간격을 조절 */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: skyblue; font-size: 50px;">fisa website 입니다</h1>
+    <h2 style="color: green; font-size: 30px;">로그인을 해주세요</h2>
+	<form action="validation" method="GET">
+        <label for="username">아이디:</label>
+        <input type="text" id="username" name="id" required>
+
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="pw" required>
+
+        <button type="submit">로그인</button>
+    </form>
+</body>
+</html>
